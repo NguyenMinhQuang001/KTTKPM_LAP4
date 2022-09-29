@@ -91,10 +91,21 @@ class QuanLyChuyenBayJpaApplicationTests {
 //	}
 	
 //	8.	Cho biết tổng số lương phải trả cho các nhân viên.
+//	@Test
+//	void cau8() {
+//		int nhanViens;
+//		nhanViens = nhanVienRepository.TongLuongNVPhaiTra();
+//		System.out.println("Tổng số lương phải trả cho các nhân viên: "+nhanViens);
+//	}
+	
+//	9.	Cho biết mã số của các phi công lái máy báy Boeing.
 	@Test
-	void cau8() {
-		int nhanViens;
-		nhanViens = nhanVienRepository.TongLuongNVPhaiTra();
-		System.out.println("Tổng số lương phải trả cho các nhân viên: "+nhanViens);
-	}
+    void cau9() {
+        List<String> nhanViens ;
+        nhanViens = nhanVienRepository.findNVLaiBoeing();
+        System.out.println("--<Mã số của các phi công lái máy báy Boeing>--");
+        for (String nv : nhanViens) {
+            System.out.println(nv);
+        }
+    }
 }

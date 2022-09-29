@@ -59,6 +59,13 @@ public class NhanVien {
 	public NhanVien() {
 		super();
 	}
+	
+	
+
+	protected NhanVien(String maNV) {
+		super();
+		this.maNV = maNV;
+	}
 
 	@Override
 	public String toString() {
