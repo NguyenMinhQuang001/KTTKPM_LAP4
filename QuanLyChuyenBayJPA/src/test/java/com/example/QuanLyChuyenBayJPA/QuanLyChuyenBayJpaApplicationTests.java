@@ -65,12 +65,20 @@ class QuanLyChuyenBayJpaApplicationTests {
 //	}
 
 //	5.	Cho biết các chuyến bay xuất phát từ Sài Gòn (SGN) đi Ban Mê Thuộc (BMV).
+//	@Test
+//	void cau5() {
+//		List<ChuyenBay> chuyenBays;
+//		chuyenBays = chuyenBayRepository.findChuyenBaysfromSGNtoBMV();
+//		for (ChuyenBay chuyenBay : chuyenBays) {
+//			System.out.println(chuyenBay);
+//		}
+//	}
+	
+//	6.	Có bao nhiêu chuyến bay xuất phát từ Sài Gòn (SGN).
 	@Test
-	void cau5() {
-		List<ChuyenBay> chuyenBays;
-		chuyenBays = chuyenBayRepository.findChuyenBaysfromSGNtoBMV();
-		for (ChuyenBay chuyenBay : chuyenBays) {
-			System.out.println(chuyenBay);
-		}
+	void cau6() {
+		int chuyenBays;
+		chuyenBays = chuyenBayRepository.CountChuyenBaysfromSG();
+		System.out.println("Số chuyến bay xuất phát từ Sài Gòn: "+chuyenBays);
 	}
 }
