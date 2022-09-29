@@ -10,4 +10,7 @@ import com.example.QuanLyChuyenBayJPA.entity.NhanVien;
 public interface NhanVienRepository  extends JpaRepository<NhanVien, String>{
 	@Query(value = "select *from nhanvien where Luong < 10000", nativeQuery = true)
 	public List<NhanVien> findNVLuongNH10000();
+	
+	@Query(value = "SELECT SUM(Luong) FROM nhanvien", nativeQuery = true)
+	public int TongLuongNVPhaiTra();
 }

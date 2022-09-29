@@ -83,10 +83,18 @@ class QuanLyChuyenBayJpaApplicationTests {
 //	}
 	
 //	7.	Có bao nhiêu loại máy báy Boeing.
+//	@Test
+//	void cau7() {
+//		int mayBays;
+//		mayBays = mayBayRepository.CountMayBayLoaiBoeing();
+//		System.out.println("Số lượng máy bay loại Boeing: "+mayBays);
+//	}
+	
+//	8.	Cho biết tổng số lương phải trả cho các nhân viên.
 	@Test
-	void cau7() {
-		int mayBays;
-		mayBays = mayBayRepository.CountMayBayLoaiBoeing();
-		System.out.println("Số lượng máy bay loại Boeing: "+mayBays);
+	void cau8() {
+		int nhanViens;
+		nhanViens = nhanVienRepository.TongLuongNVPhaiTra();
+		System.out.println("Tổng số lương phải trả cho các nhân viên: "+nhanViens);
 	}
 }
