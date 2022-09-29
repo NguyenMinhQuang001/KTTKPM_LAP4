@@ -45,5 +45,10 @@ public class MayBay {
 	public MayBay() {
 		super();
 	}
+	@Override
+	public String toString() {
+		return "MayBay [maMB=" + maMB + ", loai=" + loai + ", tamBay=" + tamBay + "]";
+	}
     
+	
 }
