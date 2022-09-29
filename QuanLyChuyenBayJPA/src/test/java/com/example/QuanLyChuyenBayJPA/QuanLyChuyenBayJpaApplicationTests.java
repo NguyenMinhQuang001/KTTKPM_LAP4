@@ -55,13 +55,22 @@ class QuanLyChuyenBayJpaApplicationTests {
 //    }
 
 //	4.	Cho biết các chuyến bay có độ dài đường bay nhỏ hơn 10.000km và lớn hơn 8.000km.
-	@Test
-  void cau4() {
-      List<ChuyenBay> chuyenBays ;
-      chuyenBays = chuyenBayRepository.findChuyenBaysDoDaiNH10000LH8000();
-      for (ChuyenBay chuyenBay : chuyenBays) {
-          System.out.println(chuyenBay);
-      }
-  }
+//	@Test
+//	void cau4() {
+//		List<ChuyenBay> chuyenBays;
+//		chuyenBays = chuyenBayRepository.findChuyenBaysDoDaiNH10000LH8000();
+//		for (ChuyenBay chuyenBay : chuyenBays) {
+//			System.out.println(chuyenBay);
+//		}
+//	}
 
+//	5.	Cho biết các chuyến bay xuất phát từ Sài Gòn (SGN) đi Ban Mê Thuộc (BMV).
+	@Test
+	void cau5() {
+		List<ChuyenBay> chuyenBays;
+		chuyenBays = chuyenBayRepository.findChuyenBaysfromSGNtoBMV();
+		for (ChuyenBay chuyenBay : chuyenBays) {
+			System.out.println(chuyenBay);
+		}
+	}
 }
