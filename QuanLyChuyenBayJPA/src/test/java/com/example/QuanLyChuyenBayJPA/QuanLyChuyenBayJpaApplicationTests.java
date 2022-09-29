@@ -75,10 +75,18 @@ class QuanLyChuyenBayJpaApplicationTests {
 //	}
 	
 //	6.	Có bao nhiêu chuyến bay xuất phát từ Sài Gòn (SGN).
+//	@Test
+//	void cau6() {
+//		int chuyenBays;
+//		chuyenBays = chuyenBayRepository.CountChuyenBaysfromSG();
+//		System.out.println("Số chuyến bay xuất phát từ Sài Gòn: "+chuyenBays);
+//	}
+	
+//	7.	Có bao nhiêu loại máy báy Boeing.
 	@Test
-	void cau6() {
-		int chuyenBays;
-		chuyenBays = chuyenBayRepository.CountChuyenBaysfromSG();
-		System.out.println("Số chuyến bay xuất phát từ Sài Gòn: "+chuyenBays);
+	void cau7() {
+		int mayBays;
+		mayBays = mayBayRepository.CountMayBayLoaiBoeing();
+		System.out.println("Số lượng máy bay loại Boeing: "+mayBays);
 	}
 }
