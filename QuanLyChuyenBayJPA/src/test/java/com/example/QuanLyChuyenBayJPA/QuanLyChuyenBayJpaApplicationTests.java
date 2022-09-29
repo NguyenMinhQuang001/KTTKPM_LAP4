@@ -17,13 +17,13 @@ import com.example.QuanLyChuyenBayJPA.repository.NhanVienRepository;
 class QuanLyChuyenBayJpaApplicationTests {
 	@Autowired
 	ChuyenBayRepository chuyenBayRepository;
-	
+
 	@Autowired
 	MayBayRepository mayBayRepository;
-	
+
 	@Autowired
 	NhanVienRepository nhanVienRepository;
-	
+
 //	1.	Cho biết các chuyến bay đi Đà Lạt (DAD).
 //	@Test
 //    void cau1() {
@@ -43,15 +43,25 @@ class QuanLyChuyenBayJpaApplicationTests {
 //            System.out.println(mb);
 //        }
 //    }
-	
+
 //	3.	Tìm các nhân viên có lương nhỏ hơn 10,000.
+//	@Test
+//    void cau3() {
+//        List<NhanVien> nhanViens ;
+//        nhanViens = nhanVienRepository.findNVLuongNH10000();
+//        for (NhanVien nv : nhanViens) {
+//            System.out.println(nv);
+//        }
+//    }
+
+//	4.	Cho biết các chuyến bay có độ dài đường bay nhỏ hơn 10.000km và lớn hơn 8.000km.
 	@Test
-    void cau3() {
-        List<NhanVien> nhanViens ;
-        nhanViens = nhanVienRepository.findNVLuongNH10000();
-        for (NhanVien nv : nhanViens) {
-            System.out.println(nv);
-        }
-    }
+  void cau4() {
+      List<ChuyenBay> chuyenBays ;
+      chuyenBays = chuyenBayRepository.findChuyenBaysDoDaiNH10000LH8000();
+      for (ChuyenBay chuyenBay : chuyenBays) {
+          System.out.println(chuyenBay);
+      }
+  }
 
 }
