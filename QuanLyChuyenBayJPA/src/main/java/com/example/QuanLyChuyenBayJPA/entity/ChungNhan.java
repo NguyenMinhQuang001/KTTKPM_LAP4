@@ -5,11 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Setter
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
+
 @Entity(name = "chungnhan")
 public class ChungNhan implements Serializable {
 	@Id

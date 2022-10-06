@@ -9,7 +9,6 @@ import java.io.Serializable;
 
 @Embeddable
 @EqualsAndHashCode
-@NoArgsConstructor @AllArgsConstructor
 public class ChungNhanPK implements Serializable {
     private String nhanVien;
     private int mayBay;

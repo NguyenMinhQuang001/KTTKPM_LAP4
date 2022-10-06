@@ -7,11 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Date;
 
-@Setter
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
+
 @Entity(name = "chuyenbay")
 public class ChuyenBay {
 	@Id
